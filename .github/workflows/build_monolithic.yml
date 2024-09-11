@@ -89,6 +89,13 @@ jobs:
       DXVK_INSTALLATION: dxvk-cx${{ matrix.CROSS_OVER_VERSION }}
 
     steps:
+      - name: Setup Python
+        uses: actions/setup-python@v3
+        with:
+          python-version: 3.10
+
+      - name: Display Python version
+        run: python -c "import sys; print(sys.version)"
 
       ############ Prepare Workspace / Environment ##############
 
