@@ -50,7 +50,6 @@ fi
 # Manually configure $PATH
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin"
 
-pip install setuptools
 
 begingroup "Installing Dependencies"
 # build dependencies
