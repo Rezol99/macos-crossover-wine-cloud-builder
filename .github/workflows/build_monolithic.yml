@@ -98,6 +98,8 @@ jobs:
       - name: Get latest HomeBrew formulas/bottles
         run: |
           brew update
+          pip install setuptools
+
 
       - name: Install Wine Build Dependencies
         run: |
