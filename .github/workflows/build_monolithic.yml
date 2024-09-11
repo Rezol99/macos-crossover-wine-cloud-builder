@@ -27,6 +27,12 @@ jobs:
       CROSS_OVER_SOURCE_URL: https://media.codeweavers.com/pub/crossover/source/crossover-sources-21.2.0.tar.gz
       CROSS_OVER_LOCAL_FILE: crossover-22.0.1
     steps:
+
+      - name: Setup Python
+        uses: actions/setup-python@v3
+        with:
+          python-version: 3.10
+
       - name: Checkout
         uses: actions/checkout@v3
 
